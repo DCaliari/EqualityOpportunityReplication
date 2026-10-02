@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Replication package ��� The anatomy of preferences for equality
+of opportunity</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+  <style type="text/css">:root { --fg:#1f2328; --muted:#59636e; --bg:#ffffff; --code:#f6f8fa; --border:#d1d9e0; --link:#0969da; }
+@media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --muted:#9198a1; --bg:#0d1117; --code:#161b22; --border:#3d444d; --link:#4493f8; } }
+html { background: var(--bg); }
+body { color: var(--fg); background: var(--bg); font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.55; max-width: 1000px; margin: 0 auto; padding: 2rem 1.5rem 4rem; font-size: 16px; }
+h1, h2, h3, h4 { line-height: 1.25; margin-top: 1.8em; }
+h1 { font-size: 2em; border-bottom: 1px solid var(--border); padding-bottom: .3em; margin-top: .5em; }
+h2 { font-size: 1.5em; border-bottom: 1px solid var(--border); padding-bottom: .3em; }
+h3 { font-size: 1.25em; } h4 { font-size: 1.05em; }
+a { color: var(--link); text-decoration: none; } a:hover { text-decoration: underline; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 85%; background: var(--code); padding: .1em .3em; border-radius: 4px; }
+pre { background: var(--code); border: 1px solid var(--border); border-radius: 6px; padding: 1em; overflow-x: auto; line-height: 1.4; }
+pre code { background: none; padding: 0; font-size: 13px; white-space: pre; }
+table { border-collapse: collapse; margin: 1em 0; display: block; overflow-x: auto; max-width: 100%; }
+th, td { border: 1px solid var(--border); padding: .4em .75em; vertical-align: top; }
+th { background: var(--code); text-align: left; }
+tr:nth-child(even) td { background: color-mix(in srgb, var(--code) 50%, transparent); }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+math { font-size: 1.05em; }
+</style>
+</head>
+<body>
+<h1 id="replication-package">Replication package</h1>
+<p><strong>The anatomy of preferences for equality of
+opportunity</strong><br />
+Daniele Caliari (WZB Berlin), Valentino Dardanoni (University of
+Palermo), Vincenzo Prete (University of Palermo), Ivan Soraperra (MPI
+for Human Development)</p>
+<p>This package contains the data and the R code needed to reproduce
+every statistical result, figure, and regression table in the paper and
+its appendices. The experiment was run in October 2025 with oTree at the
+Technical University of Berlin (10 sessions, 192 participants). The
+pre-registration is available at <a href="https://osf.io/gjwvm" class="uri">https://osf.io/gjwvm</a>.</p>
+<hr />
+<h2 id="contents">Contents</h2>
+<ol type="1">
+<li><a href="#1-quick-start">Quick start</a></li>
+<li><a href="#2-software-requirements">Software requirements</a></li>
+<li><a href="#3-data">Data</a></li>
+<li><a href="#4-folder-structure">Folder structure</a></li>
+<li><a href="#5-workflow-and-order-of-execution">Workflow and order of
+execution</a></li>
+<li><a href="#6-script-documentation">Script documentation</a></li>
+<li><a href="#7-output-file-dictionary">Output file dictionary</a></li>
+<li><a href="#8-mapping-from-paper-exhibits-to-code-and-output">Mapping
+from paper exhibits to code and output</a></li>
+<li><a href="#9-material-in-the-paper-not-generated-by-code">Material in
+the paper not generated by code</a></li>
+<li><a href="#10-notes-and-caveats">Notes and caveats</a></li>
+</ol>
+<hr />
+<h2 id="1-quick-start">1. Quick start</h2>
+<p>All intermediate results of the structural estimation
+(<code>.Rdata</code> files, estimate tables, bootstrap draws, and
+posterior type probabilities) are already included. To reproduce all
+tests, figures, and tables in the paper <strong>without re-running the
+structural estimation</strong>, set the working directory to the root
+folder (<code>Replication package/</code>) and run:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;main_results_tests_and_figure.R&quot;</span>)</span></code></pre></div>
+<p>This reads the data and runs all non-parametric tests. It prints to
+the console the LaTeX code of every regression table and of the two
+parameter tables of the structural analysis (trembles, and type shares
+with LRT
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-values).
+It also writes the five figures (<code>Figure*_R*.pdf</code>) to the
+root folder.</p>
+<p>To re-run the structural estimation from scratch, see <a href="#5-workflow-and-order-of-execution">Section 5</a>. The estimation
+scripts are computationally intensive (1,000 random starting points and
+1,000 bootstrap replications per model) and are parallelised.</p>
+<hr />
+<h2 id="2-software-requirements">2. Software requirements</h2>
+<p>The code was written and run in R (version 4.3 or later is
+recommended). The following packages are used:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Package</th>
+<th>Used by</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>tidyverse</code> (<code>dplyr</code>, <code>tidyr</code>,
+<code>readr</code>, <code>stringr</code>, <code>ggplot2</code>, …)</td>
+<td>all scripts</td>
+<td>data manipulation, figures</td>
+</tr>
+<tr class="even">
+<td><code>parallel</code> (base R)</td>
+<td>estimation scripts</td>
+<td><code>mclapply</code>, <code>detectCores</code></td>
+</tr>
+<tr class="odd">
+<td><code>numDeriv</code></td>
+<td>loaded by <code>data_cleaning.R</code></td>
+<td>numerical derivatives (loaded, not essential for the reported
+results)</td>
+</tr>
+<tr class="even">
+<td><code>sandwich</code>, <code>lmtest</code></td>
+<td><code>main_results_tests_and_figure.R</code></td>
+<td>HC1 robust standard errors, Wald tests</td>
+</tr>
+<tr class="odd">
+<td><code>gt</code></td>
+<td><code>02_*.R</code> estimation scripts</td>
+<td>exports the estimate tables to PDF (<code>results_*.pdf</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>Notes on the environment:</p>
+<ul>
+<li><strong>Parallelisation.</strong> The estimation and bootstrap
+scripts use <code>parallel::mclapply</code>, which relies on forking and
+therefore runs in parallel only on macOS and Linux. On Windows,
+<code>mclapply</code> with <code>mc.cores &gt; 1</code> is not
+supported; set <code>n_cores &lt;- 1</code> (serial, much slower) or run
+the scripts on macOS/Linux.</li>
+<li><strong><code>gt::gtsave()</code> to PDF</strong> requires the
+<code>webshot2</code> package and a Chrome/Chromium installation. This
+only affects the convenience PDF copies of the estimate tables
+(<code>results_*.pdf</code>); all numbers are also saved as CSV.</li>
+<li><strong>Figures</strong> are saved with <code>ggsave()</code> using
+the base <code>pdf()</code> device (no Cairo required). Greek letters in
+labels are written as plotmath expressions for this reason.</li>
+</ul>
+<hr />
+<h2 id="3-data">3. Data</h2>
+<h3 id="31-source">3.1 Source</h3>
+<p><code>data_mobility.csv</code> is the raw oTree export of all 10
+sessions (192 rows, one per participant; 2,258 columns). Participants
+are identified only by the random oTree
+<code>participant.code</code>.</p>
+<p><code>data_cleaning.R</code> downloads the same file from a public
+Dropbox link and saves it as <code>data_mobility.csv</code> in the
+current working directory (see <a href="#10-notes-and-caveats">Section
+10</a>). A copy of <code>data_mobility.csv</code> is included in the
+root folder and in each estimation folder; all copies are
+byte-identical.</p>
+<h3 id="32-variables-used">3.2 Variables used</h3>
+<p><code>data_cleaning.R</code> keeps the following raw oTree variables
+(dots in names are replaced by underscores):</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Raw variable</th>
+<th>Renamed to</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>participant.code</code></td>
+<td><code>participant_code</code></td>
+<td>anonymous participant identifier</td>
+</tr>
+<tr class="even">
+<td><code>socmob_October2025.36.player.stars</code></td>
+<td><code>player_stars</code></td>
+<td>performance class in the effort task: 3 = top tercile
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>H</mi></msub><annotation encoding="application/x-tex">r_H</annotation></semantics></math>),
+2 = middle
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>M</mi></msub><annotation encoding="application/x-tex">r_M</annotation></semantics></math>),
+1 = bottom
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>L</mi></msub><annotation encoding="application/x-tex">r_L</annotation></semantics></math>);
+<code>NA</code> for spectators</td>
+</tr>
+<tr class="odd">
+<td><code>socmob_October2025.36.player.parent</code></td>
+<td><code>parent_status</code></td>
+<td>parental status, recoded <code>green</code>→<code>High</code>,
+<code>yellow</code>→<code>Medium</code>,
+<code>red</code>→<code>Low</code>,
+<code>NA</code>→<code>Spectators</code>; factor with levels
+<code>Spectators, High, Medium, Low</code></td>
+</tr>
+<tr class="even">
+<td><code>socmob_October2025.36.player.child</code></td>
+<td><code>child_status</code></td>
+<td>realised child status (colour coding, not recoded; <code>NA</code>
+for spectators)</td>
+</tr>
+<tr class="odd">
+<td><code>questions_October2025.1.player.top_third</code></td>
+<td><code>belief_top</code></td>
+<td>stated probability (0–100) of being in the top performance
+tercile</td>
+</tr>
+<tr class="even">
+<td><code>questions_October2025.1.player.middle_third</code></td>
+<td><code>belief_middle</code></td>
+<td>stated probability (0–100) of being in the middle tercile</td>
+</tr>
+<tr class="odd">
+<td><code>questions_October2025.1.player.bottom_third</code></td>
+<td><code>belief_bottom</code></td>
+<td>stated probability (0–100) of being in the bottom tercile</td>
+</tr>
+<tr class="even">
+<td><code>socmob_October2025.1.player.total_order</code></td>
+<td><code>question_1</code> … <code>question_36</code></td>
+<td>identifier of the question shown on each of the 36 screens
+(e.g. <code>q8_ne_ch</code>)</td>
+</tr>
+<tr class="odd">
+<td><code>socmob_October2025.1.player.position_order</code></td>
+<td><code>right_left_1</code> … <code>right_left_36</code></td>
+<td>whether the two alternatives were displayed in swapped left/right
+order</td>
+</tr>
+<tr class="even">
+<td><code>socmob_October2025.&lt;k&gt;.player.button_1</code> /
+<code>button_2</code></td>
+<td><code>button_L_&lt;k&gt;</code> /
+<code>button_R_&lt;k&gt;</code></td>
+<td>left/right button pressed on screen <em>k</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-coding-of-questions-and-alternatives">3.3 Coding of questions
+and alternatives</h3>
+<p>Alternatives are labelled <code>A1</code> … <code>A7</code>, which
+correspond to the mobility tables
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mn>1</mn></msup><mo>,</mo><mi>…</mi><mo>,</mo><msup><mi>f</mi><mn>7</mn></msup></mrow><annotation encoding="application/x-tex">f^1, \dots, f^7</annotation></semantics></math>
+of Appendix A (<code>A1</code> = No Mobility, <code>A4</code> = Partial
+Mobility, <code>A7</code> = Full Mobility,
+<code>A2</code>/<code>A3</code> = asymmetric mobility M↔︎L and H↔︎M,
+<code>A5</code>/<code>A6</code> = Europe-/American-style;
+<code>A5</code> and <code>A6</code> are not used in the experiment). The
+treatment is encoded in the question identifier (<code>_no_</code>,
+<code>_po_</code>, <code>_ne_</code> → <code>no</code>,
+<code>positive</code>, <code>negative</code>).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Question id</th>
+<th>Pair of alternatives</th>
+<th>Shown to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>q1</code></td>
+<td>A1 vs A4</td>
+<td>High, Spectators</td>
+</tr>
+<tr class="even">
+<td><code>q2</code></td>
+<td>A4 vs A7</td>
+<td>High, Spectators</td>
+</tr>
+<tr class="odd">
+<td><code>q3</code></td>
+<td>A1 vs A7</td>
+<td>High, Spectators</td>
+</tr>
+<tr class="even">
+<td><code>q4</code></td>
+<td>A2 vs A3</td>
+<td>High, Spectators</td>
+</tr>
+<tr class="odd">
+<td><code>q5</code></td>
+<td>A2 vs A3</td>
+<td>Medium</td>
+</tr>
+<tr class="even">
+<td><code>q6</code></td>
+<td>A2 vs A7</td>
+<td>Medium, Spectators</td>
+</tr>
+<tr class="odd">
+<td><code>q7</code></td>
+<td>A3 vs A7</td>
+<td>Medium, Spectators</td>
+</tr>
+<tr class="even">
+<td><code>q8</code></td>
+<td>A1 vs A7</td>
+<td>Medium</td>
+</tr>
+<tr class="odd">
+<td><code>q9</code></td>
+<td>A1 vs A4</td>
+<td>Low</td>
+</tr>
+<tr class="even">
+<td><code>q10</code></td>
+<td>A4 vs A7</td>
+<td>Low</td>
+</tr>
+<tr class="odd">
+<td><code>q11</code></td>
+<td>A1 vs A7</td>
+<td>Low</td>
+</tr>
+<tr class="even">
+<td><code>q12</code></td>
+<td>A2 vs A3</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+<p>Each question is asked once in each of the three meritocracy
+treatments. Members therefore answer 12 questions and spectators 18.</p>
+<h3 id="34-objects-created-by-data_cleaningr">3.4 Objects created by
+<code>data_cleaning.R</code></h3>
+<p>After sourcing <code>data_cleaning.R</code>, the workspace contains
+only two objects:</p>
+<ul>
+<li><strong><code>df</code></strong> — wide data, 192 rows × 151 columns
+(one row per participant).</li>
+<li><strong><code>df_long</code></strong> — long data, 2,592 rows (48
+spectators × 18 + 144 members × 12), one row per participant × question
+actually seen, with columns
+<code>participant_code, player_stars, parent_status, child_status, belief_top, belief_middle, belief_bottom, q, question, right_left, button_L, button_R, meritocracy, alternatives, choice</code>.
+The variable <code>choice</code> (e.g. <code>&quot;A7&quot;</code>) is the
+alternative actually chosen, obtained by combining the button pressed
+with the left/right display order.</li>
+</ul>
+<hr />
+<h2 id="4-folder-structure">4. Folder structure</h2>
+<pre><code>Replication package/
+│
+├── README.md                                            this file
+├── data_mobility.csv                                    raw oTree data (192 participants)
+├── data_cleaning.R                                      downloads + cleans data → df, df_long
+├── main_results_tests_and_figure.R                      all tests, regressions, tables and figures of the paper
+│
+├── FigureMainResults_R.pdf                              Figure &quot;Results 1 to 4&quot;
+├── FigureStructural_R_v2.pdf                            Figure &quot;Distribution of motives&quot;
+├── FigureStructuralUniform_R_v2.pdf                     Appendix figure, uniform assignment rule
+├── FigureJointSpec_R.pdf                                Appendix figure, spectators&#39; joint choices
+├── FigureA2A3_R.pdf                                     Appendix figure, f2 vs f3 choices
+│
+├── Clean version - no overlap - 5 types/                MAIN structural model (Sec. 5)
+│   ├── data_mobility.csv, data_cleaning.R               copies (scripts are run from here)
+│   ├── prefs_to_choices.R                               admissible preference profiles + parser
+│   ├── stima_pre_process.R                              likelihood + estimation data
+│   ├── 01_stima_tremble_1000starts_parallel.R           multi-start MLE, with tremble
+│   ├── 01_stima_no_tremble_1000starts_parallel.R        multi-start MLE, tremble = 0
+│   ├── 02_stima_tremble_se_bestmodel.R                  bootstrap SE + posteriors, with tremble
+│   ├── 02_stima_no_tremble_se_bestmodel.R               bootstrap SE + posteriors, tremble = 0
+│   ├── stima_tremble_1000starts.Rdata                   output of 01 (tremble)
+│   ├── stima_no_tremble_1000starts.Rdata                output of 01 (no tremble)
+│   ├── stima_tremble_se_bestmodel.Rdata                 output of 02 (tremble)
+│   ├── stima_no_tremble_se_bestmodel.Rdata              output of 02 (no tremble)
+│   ├── results_tremble_se_bestmodel.{csv,pdf}           estimates + bootstrap SE
+│   ├── results_no_tremble_se_bestmodel.{csv,pdf}
+│   ├── bootstrap_tremble_se_bestmodel.csv               1,000 bootstrap draws
+│   ├── bootstrap_no_tremble_se_bestmodel.csv
+│   ├── posterior_{spec,high,med,low}_tr_bestmodel.csv   individual posteriors (tremble)
+│   └── posterior_{spec,high,med,low}_no_tr_bestmodel.csv
+│                                                        individual posteriors (no tremble)
+│
+├── Clean version - uniform - 5 types/                   ROBUSTNESS: uniform assignment rule (App. E.1)
+│   └── same file names and structure as the main folder
+│
+├── Clean version - no overlap - 5 types drop types/     RESTRICTED models, Table 5 cols (4)–(6)
+│   ├── data_mobility.csv, data_cleaning.R, prefs_to_choices.R, stima_pre_process.R   (copies)
+│   ├── stima_tremble_1000starts.Rdata                   copy of the unrestricted fit (needed by 03)
+│   ├── 01_stima_tremble_drop_{mob,mer,mobmer}_1000starts_parallel.R
+│   ├── 02_stima_tremble_se_drop_{mob,mer,mobmer}.R
+│   ├── 03_bootstrap_LRT_drop_{mob,mer,mobmer}.R
+│   ├── stima_tremble_drop_{mob,mer,mobmer}_1000starts.Rdata
+│   ├── stima_tremble_se_drop_{mob,mer,mobmer}.Rdata
+│   ├── results_tremble_se_drop_{mob,mer,mobmer}.{csv,pdf}
+│   ├── bootstrap_tremble_se_drop_{mob,mer,mobmer}.csv
+│   ├── posterior_{spec,high,med,low}_tr_drop_{mob,mer,mobmer}.csv
+│   └── bootstrap_LRT_drop_{...}.{rds,Rdata}, bootstrap_LRT_drop_{...}_draws.csv
+│
+└── Clean version - no overlap - 5 types drop motives/   RESTRICTED models, Table 5 cols (2)–(3)
+    ├── data_mobility.csv, data_cleaning.R, prefs_to_choices.R, stima_pre_process.R   (copies)
+    ├── stima_tremble_1000starts.Rdata                   copy of the unrestricted fit (needed by 03)
+    ├── 01_stima_tremble_drop_mobmer_{mob,mer}_1000starts_parallel.R
+    ├── 02_stima_tremble_se_drop_mobmer_{mob,mer}.R
+    ├── 03_bootstrap_LRT_drop_mobmer_{mob,mer}.R
+    ├── stima_tremble_drop_mobmer_{mob,mer}_1000starts.Rdata
+    ├── stima_tremble_se_drop_mobmer_{mob,mer}.Rdata
+    ├── results_tremble_se_drop_mobmer_{mob,mer}.{csv,pdf}
+    ├── bootstrap_tremble_se_drop_mobmer_{mob,mer}.csv
+    ├── posterior_{spec,high,med,low}_tr_drop_mobmer_{mob,mer}.csv
+    └── bootstrap_LRT_drop_mobmer_{...}.{rds,Rdata}, bootstrap_LRT_drop_mobmer_{...}_draws.csv</code></pre>
+<p>Naming conventions: <code>stima</code> = estimation; <code>tr</code>
+/ <code>no_tr</code> = with / without tremble; <code>spec</code>,
+<code>high</code>, <code>med</code>, <code>low</code> = the four roles;
+<code>mob</code> = <em>Mobility</em> type, <code>mer</code> =
+<em>Meritocracy</em> type, <code>mobmer</code> = <em>Mobility &amp;
+Meritocracy</em> type. In the “drop types” folder, <code>drop_X</code>
+removes type X only. In the “drop motives” folder,
+<code>drop_mobmer_mob</code> removes every type that requires the
+mobility motive (<em>Mobility</em> and <em>Mobility &amp;
+Meritocracy</em>), and <code>drop_mobmer_mer</code> removes every type
+that requires the meritocracy motive (<em>Meritocracy</em> and
+<em>Mobility &amp; Meritocracy</em>).</p>
+<p>Each estimation folder is self-contained: its scripts
+<code>source()</code> files with relative paths, so <strong>each
+estimation script must be run with its own folder as the working
+directory</strong>. This is why <code>data_cleaning.R</code>,
+<code>data_mobility.csv</code>, <code>prefs_to_choices.R</code>, and
+<code>stima_pre_process.R</code> are replicated across folders.
+<code>main_results_tests_and_figure.R</code> must be run from the root
+folder; it reads estimation outputs from the subfolders.</p>
+<hr />
+<h2 id="5-workflow-and-order-of-execution">5. Workflow and order of
+execution</h2>
+<pre><code>data_mobility.csv ──► data_cleaning.R ──► df, df_long
+                                              │
+             ┌────────────────────────────────┼─────────────────────────────────┐
+             ▼                                ▼                                 ▼
+  prefs_to_choices.R ──► stima_pre_process.R  (in each estimation folder)   main_results_tests_and_figure.R
+                               │                                             (root; needs the outputs below)
+             ┌─────────────────┴──────────────────┐
+             ▼                                    ▼
+   01_*_1000starts_parallel.R  ──►  *_1000starts.Rdata
+             │
+             ▼
+   02_*_se_*.R  ──►  results_*.csv/pdf, bootstrap_*.csv, posterior_*.csv, *_se_*.Rdata
+             │
+             ▼   (restricted models only; also needs the unrestricted stima_tremble_1000starts.Rdata)
+   03_bootstrap_LRT_*.R  ──►  bootstrap_LRT_*.rds / .Rdata / _draws.csv</code></pre>
+<p>To reproduce everything from scratch, run the scripts in this order.
+Each block must be run from inside the indicated folder.</p>
+<ol type="1">
+<li><strong><code>Clean version - no overlap - 5 types/</code></strong>
+<code>01_stima_tremble_1000starts_parallel.R</code> →
+<code>01_stima_no_tremble_1000starts_parallel.R</code> →
+<code>02_stima_tremble_se_bestmodel.R</code> →
+<code>02_stima_no_tremble_se_bestmodel.R</code></li>
+<li><strong><code>Clean version - uniform - 5 types/</code></strong> —
+same four scripts, same order.</li>
+<li><strong><code>Clean version - no overlap - 5 types drop types/</code></strong>
+For each X in {<code>mob</code>, <code>mer</code>, <code>mobmer</code>}:
+<code>01_stima_tremble_drop_X_1000starts_parallel.R</code> →
+<code>02_stima_tremble_se_drop_X.R</code> →
+<code>03_bootstrap_LRT_drop_X.R</code>.</li>
+<li><strong><code>Clean version - no overlap - 5 types drop motives/</code></strong>
+For each X in {<code>mob</code>, <code>mer</code>}:
+<code>01_stima_tremble_drop_mobmer_X_1000starts_parallel.R</code> →
+<code>02_stima_tremble_se_drop_mobmer_X.R</code> →
+<code>03_bootstrap_LRT_drop_mobmer_X.R</code>.</li>
+<li><strong>Root folder:</strong>
+<code>main_results_tests_and_figure.R</code>.</li>
+</ol>
+<p>The <code>03_</code> scripts in steps 3 and 4 also load the
+unrestricted fit <code>stima_tremble_1000starts.Rdata</code>. Both
+folders already contain a byte-identical copy of the file produced in
+step 1; if you re-run step 1, copy the new file into both folders before
+running the <code>03_</code> scripts. Apart from this, steps 1–4 are
+independent of each other. Step 5 needs the outputs of all four
+estimation steps: steps 1 and 2 for the figures and belief regressions,
+and steps 1, 3 and 4 for the two structural tables.</p>
+<p>Reproducibility: all random draws are seeded
+(<code>set.seed(100)</code> for the starting points,
+<code>set.seed(123)</code> for the non-parametric bootstrap,
+<code>set.seed(10000 + b)</code> for replicate <em>b</em> of the
+parametric bootstrap LRT). Starting values and bootstrap indices are
+pre-generated before the parallel loop, so results do not depend on the
+number of cores.</p>
+<hr />
+<h2 id="6-script-documentation">6. Script documentation</h2>
+<h3 id="61-root-folder">6.1 Root folder</h3>
+<h4 id="data_cleaningr"><code>data_cleaning.R</code></h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Reads</strong></td>
+<td>Downloads the raw oTree export from Dropbox and saves it as
+<code>data_mobility.csv</code>; then reads
+<code>data_mobility.csv</code>.</td>
+</tr>
+<tr class="even">
+<td><strong>Produces</strong></td>
+<td>In memory only: <code>df</code> (wide) and <code>df_long</code>
+(long); see <a href="#34-objects-created-by-data_cleaningr">Section
+3.4</a>. All other objects are removed.</td>
+</tr>
+<tr class="odd">
+<td><strong>Contains</strong></td>
+<td>Loading of <code>tidyverse</code>, <code>numDeriv</code>,
+<code>parallel</code>; selection and renaming of the variables in
+Section 3.2; recoding of parental status; splitting of the
+question-order and left/right-order strings into 36 columns; reshaping
+to long format; removal of screens not seen by the participant;
+construction of <code>meritocracy</code>, <code>alternatives</code> and
+<code>choice</code>.</td>
+</tr>
+<tr class="even">
+<td><strong>Sourced by</strong></td>
+<td><code>main_results_tests_and_figure.R</code> and every
+<code>stima_pre_process.R</code>.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="main_results_tests_and_figurer"><code>main_results_tests_and_figure.R</code></h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Reads</strong></td>
+<td><code>data_cleaning.R</code> (→ <code>df_long</code>); from
+<code>Clean version - no overlap - 5 types/</code>:
+<code>results_tremble_se_bestmodel.csv</code>,
+<code>results_no_tremble_se_bestmodel.csv</code>,
+<code>posterior_{spec,high,med,low}_tr_bestmodel.csv</code>; from
+<code>Clean version - uniform - 5 types/</code>: the same files. For the
+structural tables, also
+<code>results_tremble_se_drop_{mob,mer,mobmer}.csv</code> and
+<code>bootstrap_LRT_drop_{mob,mer,mobmer}.rds</code> from
+<code>Clean version - no overlap - 5 types drop types/</code>, and
+<code>results_tremble_se_drop_mobmer_{mob,mer}.csv</code> and
+<code>bootstrap_LRT_drop_mobmer_{mob,mer}.rds</code> from
+<code>Clean version - no overlap - 5 types drop motives/</code>.</td>
+</tr>
+<tr class="even">
+<td><strong>Produces</strong></td>
+<td><code>FigureMainResults_R.pdf</code>,
+<code>FigureStructural_R_v2.pdf</code>,
+<code>FigureStructuralUniform_R_v2.pdf</code>,
+<code>FigureJointSpec_R.pdf</code>, <code>FigureA2A3_R.pdf</code> (root
+folder). All test statistics, regression output, and the LaTeX code of
+the three beliefs tables and the two structural tables are
+<strong>printed to the console</strong> (not saved to disk).</td>
+</tr>
+</tbody>
+</table>
+<p>The script is organised in self-contained blocks, each of which ends
+by clearing the workspace except for <code>df_long</code>. The blocks,
+in order, are:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Block</th>
+<th>Method</th>
+<th>Paper</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Prediction 1</td>
+<td>one-sided exact binomial test vs 0.5, spectators, <em>No</em>
+treatment, A1 vs A7</td>
+<td>Result 1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Prediction 2</td>
+<td>one-sided exact McNemar test (exact binomial on discordant pairs),
+spectators, <em>Pos</em> vs <em>Neg</em></td>
+<td>Result 2</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Prediction 2</td>
+<td>exact Cochran–Armitage trend test, null distribution by
+within-participant permutation (<em>Neg</em> &lt; <em>No</em> &lt;
+<em>Pos</em>)</td>
+<td>Result 2, footnote</td>
+</tr>
+<tr class="even">
+<td>4–5</td>
+<td>Prediction 2</td>
+<td>one-sided exact McNemar, <em>Pos</em> vs <em>No</em> and <em>No</em>
+vs <em>Neg</em></td>
+<td>Result 2, footnote</td>
+</tr>
+<tr class="odd">
+<td>6–8</td>
+<td>Prediction 3</td>
+<td>one-sided Fisher exact test, Low vs High, in <em>No</em>,
+<em>Pos</em>, <em>Neg</em></td>
+<td>Result 3 and footnote</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>Prediction 3</td>
+<td>exact Cochran–Armitage trend across High &lt; Medium &lt; Low,
+<em>No</em> treatment, null by between-subject permutation of status
+labels (enumerated via the multivariate hypergeometric)</td>
+<td>Result 3, footnote</td>
+</tr>
+<tr class="odd">
+<td>10–12</td>
+<td>Prediction 4</td>
+<td>classification of members as optimistic/pessimistic/ambiguous by
+FOSD against uniform beliefs; one-sided exact McNemar <em>Pos</em> vs
+<em>Neg</em>, <em>Pos</em> vs <em>No</em>, <em>No</em> vs
+<em>Neg</em></td>
+<td>Result 4</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>Prediction 4</td>
+<td>exact Cochran–Armitage trend (within-participant permutation),
+optimistic members</td>
+<td>Result 4, footnote</td>
+</tr>
+<tr class="odd">
+<td>14–15</td>
+<td>Prediction 4 (robustness)</td>
+<td>alternative classification
+(<code>belief_top &gt; belief_bottom</code>); McNemar <em>Pos</em> vs
+<em>Neg</em> and Cochran–Armitage</td>
+<td>Result 4, footnote (47 optimists)</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>Figure: main results</td>
+<td>shares choosing A7 over A1 with 95% Wald intervals, three
+panels</td>
+<td>Figure “Results 1 to 4”</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>Figure: distribution of motives</td>
+<td>type shares from the no-tremble and tremble models, 95% Wald
+intervals from bootstrap SE;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>π</mi><mi>ℳ</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><msub><mi>π</mi><mtext mathvariant="normal">Rand</mtext></msub></mrow><annotation encoding="application/x-tex">\pi_{\mathcal{M}} = 1-\pi_{\text{Rand}}</annotation></semantics></math>
+inherits the SE of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>π</mi><mtext mathvariant="normal">Rand</mtext></msub><annotation encoding="application/x-tex">\pi_{\text{Rand}}</annotation></semantics></math></td>
+<td>Figure “Distribution of motives”</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>Beliefs regressions (main)</td>
+<td>OLS of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mo>×</mo></mrow><annotation encoding="application/x-tex">100\times</annotation></semantics></math>(posterior
+of <em>Meritocracy</em> + <em>Mob &amp; Mer</em>) on beliefs index,
+member dummy and interaction; HC1 SE; per-status specification; Wald
+test of equal member slopes; member slope
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mn>1</mn></msub><mo>+</mo><msub><mi>β</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\beta_1+\beta_3</annotation></semantics></math>
+by delta method; bottom-vs-top quintile predicted change</td>
+<td>Table “Beliefs and meritocracy motive” and Section 6 text</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>Figure: uniform rule</td>
+<td>as block 17, reading the uniform-rule results</td>
+<td>Appendix figure (uniform assignment rule)</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>Beliefs regressions (uniform)</td>
+<td>as block 18, reading the uniform-rule posteriors</td>
+<td>Table “Beliefs and Meritocracy Motive (robustness)”</td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td>Figure: joint spectator choices</td>
+<td>distribution of the (No, Pos, Neg) vectors of A1 vs A7 choices;
+share of model-consistent vectors (71%)</td>
+<td>Appendix figure “Joint distribution of spectators’ choices”</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>Figure: asymmetric mobility</td>
+<td>shares choosing A3 over A2 by role and treatment</td>
+<td>Appendix figure “Choices between f2 and f3”</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>Tests: asymmetric mobility</td>
+<td>one-sided exact binomial tests vs 0.5 by role × treatment; Fisher
+tests Low vs High; consistency of spectators’ choices across treatments
+vs random benchmark</td>
+<td>Appendix E.3 text</td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td>Beliefs and each type</td>
+<td>specification (1) of block 18 estimated separately on each of the
+five type posteriors</td>
+<td>Table “Beliefs and preference types”</td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>Table: trembles</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>ε</mi><mo accent="true">̂</mo></mover><mi>j</mi></msub><annotation encoding="application/x-tex">\hat\varepsilon_j</annotation></semantics></math>
+and bootstrap SE by role from
+<code>results_tremble_se_bestmodel.csv</code>; implied probability of
+the preferred choice
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msub><mover><mi>ε</mi><mo accent="true">̂</mo></mover><mi>j</mi></msub><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1-\hat\varepsilon_j/2</annotation></semantics></math>
+with SE equal to
+SE<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mover><mi>ε</mi><mo accent="true">̂</mo></mover><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">(\hat\varepsilon_j)/2</annotation></semantics></math></td>
+<td>Table “Estimated tremble parameters by role”</td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>Table: type shares and LRT</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>π</mi><mo accent="true">̂</mo></mover><mi>k</mi></msub><annotation encoding="application/x-tex">\hat\pi_k</annotation></semantics></math>
+and bootstrap SE of the unrestricted model (column 1) and the five
+restricted models (columns 2–6) from the <code>results_*.csv</code>
+files; excluded types (share and SE fixed at exactly 0) left blank;
+log-likelihood = minus the stored objective; stored parametric bootstrap
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-value
+from the <code>bootstrap_LRT_*.rds</code> files, printed as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mn>0.001</mn></mrow><annotation encoding="application/x-tex">&lt;0.001</annotation></semantics></math>
+below 0.001; checks that each stored
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">LR</annotation></semantics></math>
+equals twice the log-likelihood gap in the results files and warns if an
+LRT has fewer than 1,000 valid replications</td>
+<td>Table “Estimated type shares and restricted-model comparisons”</td>
+</tr>
+</tbody>
+</table>
+<p>The regression blocks include internal consistency checks (e.g. a 4×4
+cross-tabulation verifying that each posterior file contains exactly the
+48 participants of the role it is named after).</p>
+<p>The two structural tables (blocks 25–26) use the
+<code>\tabsetup</code> and <code>\tabnotes</code> macros defined in the
+preamble of the paper, and <code>booktabs</code>.</p>
+<h3 id="62-files-shared-by-all-estimation-folders">6.2 Files shared by
+all estimation folders</h3>
+<h4 id="prefs_to_choicesr"><code>prefs_to_choices.R</code></h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Reads</strong></td>
+<td>Nothing.</td>
+</tr>
+<tr class="even">
+<td><strong>Produces</strong></td>
+<td>In memory: the parser functions and the character vectors
+<code>prefs_high</code>, <code>prefs_medium</code>,
+<code>prefs_low</code>, <code>prefs_spectator</code>.</td>
+</tr>
+<tr class="odd">
+<td><strong>Contains</strong></td>
+<td>(i) A parser for preference strings (<code>parse_preference</code>,
+<code>evaluate_choices</code>, …). Notation: <code>&gt;</code> strict
+preference, <code>=</code> indifference, <code>-</code> joins parts of
+one relation (merged through shared items via union-find and transitive
+closure), <code>;</code> separates the three treatments (order
+<em>Neg</em>; <em>No</em>; <em>Pos</em>). A binary choice (a, b) is
+evaluated to 0 if a is preferred, 1 if b is preferred, and
+<code>NA</code> if indifferent or incomparable. (ii) The full list of
+admissible preference profiles for each role, annotated with the type(s)
+they belong to. These are the profiles listed in Online Appendix A
+(Tables “Choice profiles”).</td>
+</tr>
+<tr class="even">
+<td><strong>Difference between folders</strong></td>
+<td>In the <em>no overlap</em> folders each profile is assigned to one
+type only, following the refinement rule of Appendix E.1 (most
+parsimonious type). In the <em>uniform</em> folder a profile belongs to
+every type that can rationalise it
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>𝒫</mi><mi>k</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{P}^{(1)}_k(j)</annotation></semantics></math>),
+e.g. <code>#Self + Self_Mob + Self_Mer + Self_Mob_Mer</code>.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="stima_pre_processr"><code>stima_pre_process.R</code></h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Reads</strong></td>
+<td>Sources <code>data_cleaning.R</code> and
+<code>prefs_to_choices.R</code>.</td>
+</tr>
+<tr class="even">
+<td><strong>Produces</strong></td>
+<td>In memory: the profile matrices
+<code>profiles_{spec,high,medium,low}</code>, the likelihood function
+<code>negloglik</code>, and the estimation arrays
+<code>dati_stima_{spec,high,medium,low}</code> with participant ids
+<code>id_{spec,high,medium,low}</code>.</td>
+</tr>
+<tr class="odd">
+<td><strong>Contains</strong></td>
+<td>(1) Conversion of each preference profile into the implied vector of
+12 binary choices. For Spectators, High and Low the order is
+<code>A1_A7, A1_A4, A4_A7, A2_A3</code> × (<em>Neg</em>, <em>No</em>,
+<em>Pos</em>); for Medium it is <code>A1_A7, A2_A7, A3_A7, A2_A3</code>
+× (<em>Neg</em>, <em>No</em>, <em>Pos</em>). For spectators only the 12
+questions shared with High are used (A2–A7 and A3–A7 are excluded). (2)
+<code>evaluate_choice</code>: for every participant × profile, counts of
+choices aligned with (C), contrary to (S), and indifferent under (I) the
+profile. (3) <code>tremble_lik</code>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>C</mi></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>ε</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>S</mi></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>I</mi></msup></mrow><annotation encoding="application/x-tex">(1-\varepsilon/2)^C(\varepsilon/2)^S(1/2)^I</annotation></semantics></math>.
+(4) <code>prob_profile_given_type_*</code>: matrices mapping profiles to
+types through the within-type probabilities
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo>≽</mo><mo>∣</mo><mi>k</mi><mo>,</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p(\succeq\mid k,j)</annotation></semantics></math>.
+(5) <code>negloglik</code>: the latent-class negative log-likelihood of
+Section 5, computed with <code>softmax</code> reparametrisations and
+<code>logsumexp</code> for numerical stability. (6) Construction of the
+participant × choice matrix (<code>1</code> = second alternative of the
+pair chosen, i.e. A7, A4 or A3) and of the 3-D arrays [participant ×
+profile × (C, S, I)].</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parameter vector.</strong> In the <em>no overlap</em> model
+the parameter vector has 72 elements: <code>par[1:5]</code> are the
+unconstrained type shares (mapped by softmax to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>
+in the order <em>Selfish</em>, <em>Mobility</em>, <em>Meritocracy</em>,
+<em>Mob &amp; Mer</em>, <em>Random</em>); <code>par[6:9]</code> are the
+trembles
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ε</mi><mi>j</mi></msub><annotation encoding="application/x-tex">\varepsilon_j</annotation></semantics></math>
+for Spectators, High, Medium, Low (bounded in [0, 0.5]);
+<code>par[10:72]</code> are the nuisance within-type probabilities
+(Spectators 10–14, Low 15–19, Medium 20–37, High 38–72). In the
+<em>uniform</em> model the vector has 89 elements and all within-type
+parameters (<code>par[10:89]</code>) are pinned at 0, which makes the
+within-type probabilities uniform over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝒫</mi><mi>k</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{P}_k(j)</annotation></semantics></math>.</p>
+<h3 id="63-main-structural-model--clean-version---no-overlap---5-types">6.3
+Main structural model —
+<code>Clean version - no overlap - 5 types/</code></h3>
+<h4 id="01_stima_tremble_1000starts_parallelr"><code>01_stima_tremble_1000starts_parallel.R</code></h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Reads</strong></td>
+<td>Sources <code>stima_pre_process.R</code>.</td>
+</tr>
+<tr class="even">
+<td><strong>Produces</strong></td>
+<td><code>stima_tremble_1000starts.Rdata</code> (entire workspace). Key
+objects: <code>starts_tbl</code> (one row per starting point: objective,
+convergence code and message,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>π</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat\pi</annotation></semantics></math>,
+trembles; sorted by objective), <code>all_par</code> (list of 1,000
+parameter vectors), <code>best_par</code>, <code>fit</code> (best fit:
+<code>par</code>, <code>objective</code>, <code>convergence</code>,
+<code>message</code>, <code>start_id</code>).</td>
+</tr>
+<tr class="odd">
+<td><strong>Contains</strong></td>
+<td>Maximum likelihood by <code>nlminb</code> from 1,000 random starting
+points (<code>set.seed(100)</code>; normal draws, trembles drawn from
+U[0, 0.15]), trembles bounded in [0, 0.5], run in parallel with
+<code>mclapply</code> over <code>detectCores() - 2</code> cores. The
+best fit across starts is retained.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="01_stima_no_tremble_1000starts_parallelr"><code>01_stima_no_tremble_1000starts_parallel.R</code></h4>
+<p>Identical to the previous script except that all trembles are fixed
+at 0 (<code>lower = upper = 0</code> and starting values 0). This is the
+deterministic specification. <strong>Produces</strong>
+<code>stima_no_tremble_1000starts.Rdata</code>.</p>
+<h4 id="02_stima_tremble_se_bestmodelr"><code>02_stima_tremble_se_bestmodel.R</code></h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Reads</strong></td>
+<td>Sources <code>stima_pre_process.R</code>; loads
+<code>stima_tremble_1000starts.Rdata</code>.</td>
+</tr>
+<tr class="even">
+<td><strong>Produces</strong></td>
+<td><code>results_tremble_se_bestmodel.csv</code> and <code>.pdf</code>
+(estimates and bootstrap SE),
+<code>bootstrap_tremble_se_bestmodel.csv</code> (1,000 × 9 bootstrap
+draws), <code>posterior_high_tr_bestmodel.csv</code>,
+<code>posterior_med_tr_bestmodel.csv</code>,
+<code>posterior_low_tr_bestmodel.csv</code>,
+<code>posterior_spec_tr_bestmodel.csv</code> (individual posteriors),
+<code>stima_tremble_se_bestmodel.Rdata</code> (entire workspace,
+including <code>boot_results</code>, <code>results_tbl</code>,
+<code>post</code>).</td>
+</tr>
+<tr class="odd">
+<td><strong>Contains</strong></td>
+<td>(1) Retrieval of the best 1,000-start fit. (2) Non-parametric
+bootstrap with 1,000 replications (<code>set.seed(123)</code>),
+resampling participants with replacement <em>within role</em>,
+warm-started at the MLE; replications with <code>nlminb</code>
+convergence code other than 0 or 1 are set to <code>NA</code>. (3)
+Bootstrap SE = standard deviation of the draws. (4) Individual posterior
+type probabilities by Bayes’ rule at the MLE.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="02_stima_no_tremble_se_bestmodelr"><code>02_stima_no_tremble_se_bestmodel.R</code></h4>
+<p>Same as above for the deterministic model (trembles fixed at 0).
+<strong>Reads</strong> <code>stima_no_tremble_1000starts.Rdata</code>.
+<strong>Produces</strong>
+<code>results_no_tremble_se_bestmodel.{csv,pdf}</code>,
+<code>bootstrap_no_tremble_se_bestmodel.csv</code>,
+<code>posterior_{high,med,low,spec}_no_tr_bestmodel.csv</code>,
+<code>stima_no_tremble_se_bestmodel.Rdata</code>.</p>
+<h3 id="64-uniform-assignment-rule--clean-version---uniform---5-types">6.4
+Uniform assignment rule —
+<code>Clean version - uniform - 5 types/</code></h3>
+<p>Same four scripts and output file names as in 6.3. The differences
+are in <code>prefs_to_choices.R</code> (overlapping type assignment, see
+6.2) and in <code>stima_pre_process.R</code> and the
+<code>01_</code>/<code>02_</code> scripts (89 parameters, within-type
+parameters pinned at 0 so that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo>≽</mo><mo>∣</mo><mi>k</mi><mo>,</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mi>/</mi><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>𝒫</mi><mi>k</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>j</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">p(\succeq\mid k,j) = 1/|\mathcal{P}_k(j)|</annotation></semantics></math>).
+The outputs are used in the robustness figure and table of Appendix
+E.1.</p>
+<h3 id="65-restricted-models-one-type-removed--clean-version---no-overlap---5-types-drop-types">6.5
+Restricted models, one type removed —
+<code>Clean version - no overlap - 5 types drop types/</code></h3>
+<p>For each X ∈ {<code>mob</code>, <code>mer</code>,
+<code>mobmer</code>}, the type X is removed from the unrestricted
+tremble model.</p>
+<p><strong>How the restrictions are implemented.</strong> Every
+restricted script (<code>01_</code>, <code>02_</code> and
+<code>03_</code>) defines three objects at the top: <code>drop_pi</code>
+(the types removed), <code>keep_pi</code> (the types retained) and
+<code>pin_idx</code> (the within-type parameters fixed by setting
+<code>lower = upper</code>). The restricted likelihood
+<code>negloglik_restricted</code> is the unrestricted
+<code>negloglik</code> of <code>stima_pre_process.R</code> with one
+change: the shares of the retained types are
+<code>softmax(par[keep_pi])</code> and the shares in
+<code>drop_pi</code> are set to exactly 0. The restricted model is
+therefore nested in the unrestricted one: evaluating the unrestricted
+likelihood with the raw shares in <code>drop_pi</code> set to −∞ gives
+exactly the restricted likelihood.</p>
+<p>Because a dropped type receives zero weight, the within-type
+probabilities that feed <em>only</em> that type no longer enter the
+likelihood and are pinned, so that they do not create flat directions in
+the optimiser. Blocks shared with a surviving type remain free. The
+within-type parameter blocks of <code>stima_pre_process.R</code> feed
+the following types:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameters</th>
+<th>Role</th>
+<th>Feeds type(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>par[10:14]</code></td>
+<td>Spectators</td>
+<td><em>Mob &amp; Mer</em></td>
+</tr>
+<tr class="even">
+<td><code>par[15:19]</code></td>
+<td>Low</td>
+<td><em>Meritocracy</em> and <em>Mob &amp; Mer</em> (shared: the two
+types admit the same profiles for Low)</td>
+</tr>
+<tr class="odd">
+<td><code>par[20:23]</code></td>
+<td>Medium</td>
+<td><em>Meritocracy</em></td>
+</tr>
+<tr class="even">
+<td><code>par[24:25]</code></td>
+<td>Medium</td>
+<td><em>Mobility</em></td>
+</tr>
+<tr class="odd">
+<td><code>par[26:37]</code></td>
+<td>Medium</td>
+<td><em>Mob &amp; Mer</em></td>
+</tr>
+<tr class="even">
+<td><code>par[38:42]</code></td>
+<td>High</td>
+<td><em>Meritocracy</em></td>
+</tr>
+<tr class="odd">
+<td><code>par[43:47]</code></td>
+<td>High</td>
+<td><em>Mobility</em></td>
+</tr>
+<tr class="even">
+<td><code>par[48:72]</code></td>
+<td>High</td>
+<td><em>Mob &amp; Mer</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Selfish</em> and <em>Random</em> types, and the
+<em>Mobility</em> and <em>Meritocracy</em> types of Spectators and the
+<em>Mobility</em> type of Low, map to a single profile and have no
+within-type parameters. The five restricted models are:</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Folder</th>
+<th>Types dropped (<code>drop_pi</code>)</th>
+<th>Parameters pinned (<code>pin_idx</code>)</th>
+<th>Type-shares table</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>drop_mobmer_mob</code></td>
+<td>drop motives</td>
+<td><em>Mobility</em>, <em>Mob &amp; Mer</em> (2, 4)</td>
+<td>10:14, 24:25, 26:37, 43:47, 48:72</td>
+<td>column (2)</td>
+</tr>
+<tr class="even">
+<td><code>drop_mobmer_mer</code></td>
+<td>drop motives</td>
+<td><em>Meritocracy</em>, <em>Mob &amp; Mer</em> (3, 4)</td>
+<td>10:14, 15:19, 20:23, 26:37, 38:42, 48:72</td>
+<td>column (3)</td>
+</tr>
+<tr class="odd">
+<td><code>drop_mob</code></td>
+<td>drop types</td>
+<td><em>Mobility</em> (2)</td>
+<td>24:25, 43:47</td>
+<td>column (4)</td>
+</tr>
+<tr class="even">
+<td><code>drop_mer</code></td>
+<td>drop types</td>
+<td><em>Meritocracy</em> (3)</td>
+<td>20:23, 38:42</td>
+<td>column (5)</td>
+</tr>
+<tr class="odd">
+<td><code>drop_mobmer</code></td>
+<td>drop types</td>
+<td><em>Mob &amp; Mer</em> (4)</td>
+<td>10:14, 26:37, 48:72</td>
+<td>column (6)</td>
+</tr>
+</tbody>
+</table>
+<p>The Low block <code>par[15:19]</code> is pinned only in
+<code>drop_mobmer_mer</code>, where both types it feeds are removed. In
+<code>drop_mer</code> and <code>drop_mobmer</code> it remains free
+because it still feeds the surviving type. The same
+<code>drop_pi</code>, <code>keep_pi</code> and <code>pin_idx</code> are
+used in the <code>01_</code>, <code>02_</code> and <code>03_</code>
+script of each model.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Script</th>
+<th>Reads</th>
+<th>Produces</th>
+<th>Contains</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>01_stima_tremble_drop_X_1000starts_parallel.R</code></td>
+<td><code>stima_pre_process.R</code></td>
+<td><code>stima_tremble_drop_X_1000starts.Rdata</code></td>
+<td>restricted <code>negloglik</code>; 1,000-start MLE as in 6.3</td>
+</tr>
+<tr class="even">
+<td><code>02_stima_tremble_se_drop_X.R</code></td>
+<td><code>stima_pre_process.R</code>,
+<code>stima_tremble_drop_X_1000starts.Rdata</code></td>
+<td><code>results_tremble_se_drop_X.{csv,pdf}</code>,
+<code>bootstrap_tremble_se_drop_X.csv</code>,
+<code>posterior_{spec,high,med,low}_tr_drop_X.csv</code>,
+<code>stima_tremble_se_drop_X.Rdata</code></td>
+<td>bootstrap SE and posteriors as in 6.3</td>
+</tr>
+<tr class="odd">
+<td><code>03_bootstrap_LRT_drop_X.R</code></td>
+<td><code>stima_pre_process.R</code>,
+<code>stima_tremble_1000starts.Rdata</code> (unrestricted),
+<code>stima_tremble_drop_X_1000starts.Rdata</code> (restricted)</td>
+<td><code>bootstrap_LRT_drop_X.rds</code>,
+<code>bootstrap_LRT_drop_X.Rdata</code>,
+<code>bootstrap_LRT_drop_X_draws.csv</code></td>
+<td>parametric bootstrap likelihood-ratio test (see below)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parametric bootstrap LRT (<code>03_</code> scripts).</strong>
+Because the restriction puts mixture weights on the boundary of the
+parameter space, the LR statistic does not follow a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>χ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\chi^2</annotation></semantics></math>
+distribution. The script (1) computes the observed
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>R</mi><mo>=</mo><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><msub><mo>ℓ</mo><mtext mathvariant="normal">full</mtext></msub><mo>−</mo><msub><mo>ℓ</mo><mtext mathvariant="normal">restricted</mtext></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">LR = 2(\ell_{\text{full}} - \ell_{\text{restricted}})</annotation></semantics></math>;
+(2) builds the data-generating process under
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>H</mi><mn>0</mn></msub><annotation encoding="application/x-tex">H_0</annotation></semantics></math>
+from the restricted MLE; (3) for each replicate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+(<code>set.seed(10000 + b)</code>) simulates a dataset of the same size
+and role composition, and re-estimates both models, keeping the best of
+several <code>nlminb</code> fits: the restricted model from 9 starts
+(its MLE plus <code>n_restarts = 8</code> random restarts) and the full
+model from 10 starts (its MLE, the restricted solution re-expressed as a
+full-model point, and 8 random restarts). Random restarts are drawn
+around the corresponding MLE (normal noise with SD 0.5 on the raw
+parameters, trembles from U[0, 0.15]). Offering the restricted solution
+to the full model ensures
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msup><mi>R</mi><mo>*</mo></msup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">LR^* \ge 0</annotation></semantics></math>
+up to optimiser tolerance; residual negative values of order
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><annotation encoding="application/x-tex">10^{-5}</annotation></semantics></math>
+are set to 0; (4) computes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>#</mi><mo stretchy="false" form="prefix">{</mo><mi>L</mi><msup><mi>R</mi><mo>*</mo></msup><mo>≥</mo><mi>L</mi><mi>R</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p = (1 + \#\{LR^* \ge LR\})/(1 + B)</annotation></semantics></math>
+over the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>000</mn></mrow><annotation encoding="application/x-tex">B = 1{,}000</annotation></semantics></math>
+valid replicates. All five <code>03_</code> scripts use the same
+settings (<code>n_boot = 1000</code>, <code>n_restarts = 8</code>, all
+available cores via <code>detectCores()</code>,
+<code>mc.preschedule = FALSE</code> for load balancing). The reported
+LRT results were obtained on the MPCDF computing cluster. They are:</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Log-lik. restricted</th>
+<th><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">LR</annotation></semantics></math></th>
+<th>Largest
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msup><mi>R</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">LR^*</annotation></semantics></math>
+in 1,000 draws</th>
+<th>#<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>L</mi><msup><mi>R</mi><mo>*</mo></msup><mo>≥</mo><mi>L</mi><mi>R</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{LR^* \ge LR\}</annotation></semantics></math></th>
+<th><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>drop_mobmer_mob</code></td>
+<td>−1167.877</td>
+<td>151.58</td>
+<td>21.25</td>
+<td>0</td>
+<td>0.001</td>
+</tr>
+<tr class="even">
+<td><code>drop_mobmer_mer</code></td>
+<td>−1154.665</td>
+<td>125.16</td>
+<td>21.55</td>
+<td>0</td>
+<td>0.001</td>
+</tr>
+<tr class="odd">
+<td><code>drop_mob</code></td>
+<td>−1117.400</td>
+<td>50.63</td>
+<td>12.66</td>
+<td>0</td>
+<td>0.001</td>
+</tr>
+<tr class="even">
+<td><code>drop_mer</code></td>
+<td>−1098.792</td>
+<td>13.41</td>
+<td>13.69</td>
+<td>1</td>
+<td>0.002</td>
+</tr>
+<tr class="odd">
+<td><code>drop_mobmer</code></td>
+<td>−1116.114</td>
+<td>48.06</td>
+<td>18.56</td>
+<td>0</td>
+<td>0.001</td>
+</tr>
+</tbody>
+</table>
+<p>The unrestricted log-likelihood is −1092.086. With
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>000</mn></mrow><annotation encoding="application/x-tex">B = 1{,}000</annotation></semantics></math>
+the smallest attainable
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-value
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>1</mn><mo>,</mo><mn>001</mn><mo>≈</mo><mn>0.001</mn></mrow><annotation encoding="application/x-tex">1/1{,}001 \approx 0.001</annotation></semantics></math>,
+which the paper reports as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&lt;</mo><mn>0.001</mn></mrow><annotation encoding="application/x-tex">p &lt; 0.001</annotation></semantics></math>.</p>
+<h3 id="66-restricted-models-one-motive-removed--clean-version---no-overlap---5-types-drop-motives">6.6
+Restricted models, one motive removed —
+<code>Clean version - no overlap - 5 types drop motives/</code></h3>
+<p>Same structure, restricted likelihood and LRT settings as 6.5 (see
+the tables there for the dropped types and pinned parameters), with two
+restrictions:</p>
+<ul>
+<li><code>drop_mobmer_mob</code>: removes all types requiring the
+mobility motive (<code>drop_pi = c(2, 4)</code>); Table 5, column
+(2).</li>
+<li><code>drop_mobmer_mer</code>: removes all types requiring the
+meritocracy motive (<code>drop_pi = c(3, 4)</code>); Table 5, column
+(3).</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Script</th>
+<th>Produces</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>01_stima_tremble_drop_mobmer_X_1000starts_parallel.R</code></td>
+<td><code>stima_tremble_drop_mobmer_X_1000starts.Rdata</code></td>
+</tr>
+<tr class="even">
+<td><code>02_stima_tremble_se_drop_mobmer_X.R</code></td>
+<td><code>results_tremble_se_drop_mobmer_X.{csv,pdf}</code>,
+<code>bootstrap_tremble_se_drop_mobmer_X.csv</code>,
+<code>posterior_{spec,high,med,low}_tr_drop_mobmer_X.csv</code>,
+<code>stima_tremble_se_drop_mobmer_X.Rdata</code></td>
+</tr>
+<tr class="odd">
+<td><code>03_bootstrap_LRT_drop_mobmer_X.R</code></td>
+<td><code>bootstrap_LRT_drop_mobmer_X.rds</code>, <code>.Rdata</code>,
+<code>_draws.csv</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7-output-file-dictionary">7. Output file dictionary</h2>
+<h3 id="results_csv"><code>results_*.csv</code></h3>
+<p>Three columns: <code>parameter</code>, <code>estimate</code>,
+<code>se</code> (bootstrap standard error). Rows:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><code>parameter</code></th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>pi_1_self</code></td>
+<td>share of <em>Selfish</em> type</td>
+</tr>
+<tr class="even">
+<td><code>pi_2_self_mob</code></td>
+<td>share of <em>Mobility</em> type</td>
+</tr>
+<tr class="odd">
+<td><code>pi_3_self_mer</code></td>
+<td>share of <em>Meritocracy</em> type</td>
+</tr>
+<tr class="even">
+<td><code>pi_4_self_mob_mer</code></td>
+<td>share of <em>Mobility &amp; Meritocracy</em> type</td>
+</tr>
+<tr class="odd">
+<td><code>pi_5_rand</code></td>
+<td>share of residual <em>Random</em> type</td>
+</tr>
+<tr class="even">
+<td><code>tremble_spec</code>, <code>tremble_high</code>,
+<code>tremble_medium</code>, <code>tremble_low</code></td>
+<td>role-specific tremble
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ε</mi><mi>j</mi></msub><annotation encoding="application/x-tex">\varepsilon_j</annotation></semantics></math></td>
+</tr>
+<tr class="odd">
+<td><code>best_start_id</code></td>
+<td>index of the best starting point</td>
+</tr>
+<tr class="even">
+<td><code>Log_lik</code></td>
+<td>value of the minimised objective, i.e. the <strong>negative</strong>
+log-likelihood (the paper reports its negative, e.g. −1092.086)</td>
+</tr>
+<tr class="odd">
+<td><code>convergence</code></td>
+<td><code>nlminb</code> convergence code of the best fit (0 = “relative
+convergence”; 1 = any other message). Code 1 typically corresponds to
+“singular convergence (7)”, which is expected here because the
+within-type nuisance parameters are not identified in some directions;
+the same optimum is reached from many starting points (see
+<code>starts_tbl</code> in the <code>*_1000starts.Rdata</code>
+files).</td>
+</tr>
+</tbody>
+</table>
+<p>In the restricted models the dropped shares are reported as exactly 0
+with SE 0; in the deterministic models the trembles are 0 with SE 0.</p>
+<p>The <code>results_*.pdf</code> files are formatted copies of the same
+tables produced with <code>gt</code>.</p>
+<h3 id="bootstrap__se_csv"><code>bootstrap_*_se_*.csv</code></h3>
+<p>1,000 rows (one per bootstrap replication) and 9 columns
+<code>V1</code>–<code>V9</code> in the order:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>π</mi><mtext mathvariant="normal">Self</mtext></msub><mo>,</mo><msub><mi>π</mi><mtext mathvariant="normal">Mob</mtext></msub><mo>,</mo><msub><mi>π</mi><mtext mathvariant="normal">Mer</mtext></msub><mo>,</mo><msub><mi>π</mi><mtext mathvariant="normal">MobMer</mtext></msub><mo>,</mo><msub><mi>π</mi><mtext mathvariant="normal">Rand</mtext></msub><mo>,</mo><msub><mi>ε</mi><mtext mathvariant="normal">spec</mtext></msub><mo>,</mo><msub><mi>ε</mi><mtext mathvariant="normal">high</mtext></msub><mo>,</mo><msub><mi>ε</mi><mtext mathvariant="normal">medium</mtext></msub><mo>,</mo><msub><mi>ε</mi><mtext mathvariant="normal">low</mtext></msub></mrow><annotation encoding="application/x-tex">\pi_{\text{Self}}, \pi_{\text{Mob}}, \pi_{\text{Mer}}, \pi_{\text{MobMer}}, \pi_{\text{Rand}}, \varepsilon_{\text{spec}}, \varepsilon_{\text{high}}, \varepsilon_{\text{medium}}, \varepsilon_{\text{low}}</annotation></semantics></math>.
+Failed replications are <code>NA</code>.</p>
+<h3 id="posterior_role_spec_modelcsv"><code>posterior_&lt;role&gt;_&lt;spec&gt;_&lt;model&gt;.csv</code></h3>
+<p>48 rows (one per participant of that role). The first column is the
+participant code (<code>id_spec</code>, <code>id_high</code>,
+<code>id_medium</code>, or <code>id_low</code>, matching
+<code>participant_code</code> in <code>df_long</code>); columns
+<code>type_1</code>–<code>type_5</code> are the posterior probabilities
+of <em>Selfish</em>, <em>Mobility</em>, <em>Meritocracy</em>,
+<em>Mobility &amp; Meritocracy</em>, <em>Random</em>, summing to 1 in
+each row.</p>
+<h3 id="rdata"><code>*.Rdata</code></h3>
+<p>Each estimation <code>.Rdata</code> file stores the entire workspace
+at the end of the corresponding script (<code>save(list = ls())</code>),
+including the data arrays, the likelihood functions, the best fit
+<code>fit</code>, and (for <code>02_</code> files)
+<code>boot_results</code>, <code>results_tbl</code> and the posteriors.
+They can be inspected with <code>load(&quot;file.Rdata&quot;)</code>.</p>
+<h3 id="bootstrap_lrt_rds--_drawscsv"><code>bootstrap_LRT_*.rds</code> /
+<code>_draws.csv</code></h3>
+<p>The <code>.rds</code> file is a list with elements
+<code>model</code>, <code>LR_obs</code>, <code>ll_full_obs</code>,
+<code>ll_restr_obs</code>, <code>p_value</code>, <code>n_boot</code>,
+<code>n_valid</code>, <code>LR_boot</code>, <code>ll_full_boot</code>,
+<code>ll_restr_boot</code>, <code>boot_mat</code>. The
+<code>_draws.csv</code> file has one row per replicate with columns
+<code>replicate</code>, <code>lr</code>, <code>ll_full</code>,
+<code>ll_restr</code>, the five type shares and four trembles of the
+full model (<code>pi_full_*</code>, <code>tr_full_*</code>), and the
+same for the restricted model (<code>pi_restr_*</code>,
+<code>tr_restr_*</code>).</p>
+<hr />
+<h2 id="8-mapping-from-paper-exhibits-to-code-and-output">8. Mapping
+from paper exhibits to code and output</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Paper exhibit (LaTeX label)</th>
+<th>Produced by</th>
+<th>Output / source file</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Results 1–4 and footnotes (Section 4)</td>
+<td><code>main_results_tests_and_figure.R</code>, blocks 1–15</td>
+<td>console</td>
+</tr>
+<tr class="even">
+<td>Figure “Results 1 to 4” (<code>fig: main_result_IS</code>)</td>
+<td><code>main_results_tests_and_figure.R</code>, block 16</td>
+<td><code>FigureMainResults_R.pdf</code></td>
+</tr>
+<tr class="odd">
+<td>Figure “Distribution of motives” (<code>fig: structural</code>),
+shares 51.7% / 75.5%</td>
+<td>block 17</td>
+<td><code>FigureStructural_R_v2.pdf</code>; numbers from
+<code>Clean version - no overlap - 5 types/results_{no_,}tremble_se_bestmodel.csv</code></td>
+</tr>
+<tr class="even">
+<td>Table “Estimated tremble parameters by role”
+(<code>tab: tremble</code>)</td>
+<td><code>main_results_tests_and_figure.R</code>, block 25</td>
+<td>console (LaTeX); source:
+<code>results_tremble_se_bestmodel.csv</code> (main folder)</td>
+</tr>
+<tr class="odd">
+<td>Table “Estimated type shares and restricted-model comparisons”
+(<code>tab:shares</code>)</td>
+<td><code>main_results_tests_and_figure.R</code>, block 26</td>
+<td>console (LaTeX); sources listed in the next rows</td>
+</tr>
+<tr class="even">
+<td>same table, col. (1)</td>
+<td>main folder, <code>02_stima_tremble_se_bestmodel.R</code></td>
+<td><code>results_tremble_se_bestmodel.csv</code></td>
+</tr>
+<tr class="odd">
+<td>same table, col. (2) “no mobility motive”</td>
+<td>drop motives, <code>drop_mobmer_mob</code></td>
+<td><code>results_tremble_se_drop_mobmer_mob.csv</code>; LRT:
+<code>bootstrap_LRT_drop_mobmer_mob.rds</code></td>
+</tr>
+<tr class="even">
+<td>same table, col. (3) “no meritocracy motive”</td>
+<td>drop motives, <code>drop_mobmer_mer</code></td>
+<td><code>results_tremble_se_drop_mobmer_mer.csv</code>; LRT:
+<code>bootstrap_LRT_drop_mobmer_mer.rds</code></td>
+</tr>
+<tr class="odd">
+<td>same table, col. (4) “no <em>Mobility</em> type”</td>
+<td>drop types, <code>drop_mob</code></td>
+<td><code>results_tremble_se_drop_mob.csv</code>; LRT:
+<code>bootstrap_LRT_drop_mob.rds</code></td>
+</tr>
+<tr class="even">
+<td>same table, col. (5) “no <em>Meritocracy</em> type”</td>
+<td>drop types, <code>drop_mer</code></td>
+<td><code>results_tremble_se_drop_mer.csv</code>; LRT:
+<code>bootstrap_LRT_drop_mer.rds</code></td>
+</tr>
+<tr class="odd">
+<td>same table, col. (6) “no <em>Mob &amp; Mer</em> type”</td>
+<td>drop types, <code>drop_mobmer</code></td>
+<td><code>results_tremble_se_drop_mobmer.csv</code>; LRT:
+<code>bootstrap_LRT_drop_mobmer.rds</code></td>
+</tr>
+<tr class="even">
+<td>Table “Beliefs and meritocracy motive”
+(<code>tab:beliefs_members_status</code>) and Section 6 text</td>
+<td>block 18</td>
+<td>console (LaTeX); uses <code>posterior_*_tr_bestmodel.csv</code>
+(main folder)</td>
+</tr>
+<tr class="odd">
+<td>Figure “Distribution of motives under the uniform assignment rule”
+(<code>fig: structural_robust</code>)</td>
+<td>block 19</td>
+<td><code>FigureStructuralUniform_R_v2.pdf</code>; numbers from
+<code>Clean version - uniform - 5 types/results_*.csv</code></td>
+</tr>
+<tr class="even">
+<td>Table “Beliefs and Meritocracy Motive (robustness)”
+(<code>tab: beliefs_robust</code>)</td>
+<td>block 20</td>
+<td>console (LaTeX); uses the uniform-folder posteriors</td>
+</tr>
+<tr class="odd">
+<td>Figure “Joint distribution of spectators’ choices”
+(<code>fig: joint_spec</code>), 71% / 32% / 68%</td>
+<td>block 21</td>
+<td><code>FigureJointSpec_R.pdf</code></td>
+</tr>
+<tr class="even">
+<td>Figure “Choices between f2 and f3” (<code>fig: a2a3</code>) and
+tests</td>
+<td>blocks 22–23</td>
+<td><code>FigureA2A3_R.pdf</code>; tests in console</td>
+</tr>
+<tr class="odd">
+<td>Table “Beliefs and preference types”
+(<code>tab:beliefs_by_type</code>)</td>
+<td>block 24</td>
+<td>console (LaTeX)</td>
+</tr>
+<tr class="even">
+<td>Online Appendix A, tables of admissible choice profiles</td>
+<td><code>prefs_to_choices.R</code></td>
+<td>preference strings <code>prefs_*</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="9-material-in-the-paper-not-generated-by-code">9. Material in
+the paper not generated by code</h2>
+<p>The following items in the paper are not produced by the scripts in
+this package: the screenshot of the choice screen
+(<code>MainQuestion.pdf</code>), the illustration of the single-crossing
+property (<code>singlecrossing.pdf</code>), the printed and on-screen
+instructions and the booklet (Online Appendices B–D), all theoretical
+tables in Appendices A–C, and the timeline diagram (drawn in TikZ). The
+areas of the model
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>j</mi></msub><annotation encoding="application/x-tex">a_j</annotation></semantics></math>
+in Section 5.2 and the probability of making at least 10 of 12 choices
+consistent with the preferred relation are derived analytically from the
+admissible profiles in <code>prefs_to_choices.R</code> and the estimated
+trembles, and are not computed in the scripts. The experiment software
+(oTree code) is not part of this package.</p>
+<hr />
+<h2 id="10-notes-and-caveats">10. Notes and caveats</h2>
+<ul>
+<li><strong>Data download.</strong> <code>data_cleaning.R</code> always
+calls <code>download.file()</code> on the Dropbox link and overwrites
+<code>data_mobility.csv</code> in the working directory. If the link is
+unavailable or there is no internet connection, comment out the
+<code>url</code>, <code>dest</code> and <code>download.file()</code>
+lines; the script then reads the local copy of
+<code>data_mobility.csv</code>, which is identical to the online
+file.</li>
+<li><strong>Working directories.</strong> Run
+<code>main_results_tests_and_figure.R</code> from the root folder and
+every estimation script from its own folder (see <a href="#4-folder-structure">Section 4</a>). Folder names contain spaces;
+keep them unchanged, since they are hard-coded in
+<code>main_results_tests_and_figure.R</code>.</li>
+<li><strong>Computation.</strong> The <code>01_</code> scripts (1,000
+starts), the <code>02_</code> scripts (1,000 bootstrap replications) and
+the <code>03_</code> scripts (parametric bootstrap with refits of two
+models per replicate) are the time-consuming steps. All of them are
+parallelised with <code>mclapply</code> (see <a href="#2-software-requirements">Section 2</a> for Windows).</li>
+<li><strong>Stochastic results.</strong> The pre-saved outputs were
+obtained with the seeds listed in Section 5. Minor numerical differences
+may arise across platforms and R/BLAS versions due to floating-point
+differences in the optimiser.</li>
+</ul>
+</body>
+</html>
